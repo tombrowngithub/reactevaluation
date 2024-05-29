@@ -1,0 +1,84 @@
+.frame-container {
+  width: 100vw;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+  background: #f3f4ff;
+
+  @media only screen and (max-width: 576px) {
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .scroll-container {
+    gap: 32px;
+    background: linear-gradient(to bottom, #ffffff, #f3f4ff);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      gap: 16px;
+      overflow-x: hidden;
+    }
+
+    .header-content {
+      min-width: 380px;
+      margin-left: 2rem;
+      margin-top: 4rem;
+      padding: 20px;
+
+      @media only screen and (max-width: 576px) {
+        min-width: auto;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 64px;
+        text-align: left;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 576px) {
+          font-size: 32px;
+          line-height: 40px;
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+
+        @media only screen and (max-width: 576px) {
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      height: 8px;
+      @media only screen and (max-width: 576px) {
+        display: none; /* Hide scrollbar on mobile */
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: gray;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.homepage {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 576px) {
+    width: 100%;
+  }
+
+
+  &::-webkit-scrollbar {
+    height: 2px;
+    background: transparent;
+  }
+
+  .homepage-content {
+    @media only screen and (max-width: 576px) {
+      width: 100%;
+    }
+
+    .separator-top {
+      margin-top: -2.8rem;
+      width: 0;
+      height: 0;
+      border-left: 100vw solid transparent;
+      border-bottom: 4.2vw solid #EDEFFF;
+      @media only screen and (max-width: 576px) {
+        width: 100%;
+        overflow-x: hidden;
+      }
+    }
+
+    .separator-bottom {
+      margin-top: -4rem;
+      width: 0;
+      height: 0;
+      border-left: 100vw solid transparent;
+      border-bottom: 4.2vw solid #202229;
+      position: relative;
+      @media only screen and (max-width: 576px) {
+        width: 0;
+        height: 0;
+        border-left: 100vw solid transparent;
+        border-bottom: 9vw solid #202229;
+      }
+
+      .quote-icon {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        @media only screen and (max-width: 576px){
+          width: 100%;
+          //height: 65px;
+          //left: -100px;
+        }
+
+      }
+
+    }
+
+    .separator-end {
+      margin-top: -4rem;
+      width: 0;
+      height: 0;
+      border-left: 100vw solid transparent;
+      border-bottom: 4vw solid #ffff;
+      @media only screen and (max-width: 576px){
+        width: 100%;
+        margin-top: -1rem;
+      }
+    }
+  }
+}
