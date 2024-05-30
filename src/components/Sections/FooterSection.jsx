@@ -8,7 +8,7 @@ import Zwilt from "../../assets/images/zwilt.png"
 const FooterSection = () => {
     return (
         <footer className="footer">
-            <div className="separator-slope"></div>
+
             <div className="contact-us">
                 <img src={Rectangle} alt=""/>
                 <div className="btn-text">

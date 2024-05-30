@@ -25,29 +25,12 @@
     //margin-top: 3.5rem;
     margin-left: 8rem;
     margin-right: 8rem;
-    position: relative;
+    //position: relative;
     @media only screen and (max-width: 768px) {
       width: 100%;
       margin-left: 0;
       margin-right: 0;
     }
-
-
-    .separator-content1-top {
-      width: 100vw;
-      height: 80px;
-      left: -2rem;
-      background-color: #ffff;
-      bottom: 350px;
-      position: absolute;
-      transform: rotate(-2.6deg);
-      border-bottom-right-radius: 4px;
-      @media only screen and (max-width: 768px) {
-        width: 100%;
-        left: 0;
-      }
-    }
-
 
     .one, .two {
       height: 387.5px;
@@ -55,7 +38,7 @@
       overflow: hidden;
       @media only screen and (max-width: 768px) {
         width: 100%;
-        //height: auto;
+        height: auto;
         display: flex;
         flex-direction: column;
       }
@@ -67,6 +50,7 @@
         @media only screen and (max-width: 768px) {
           width: 100%;
           flex: 0;
+          padding: 0.8rem;
         }
 
         .card-one {
@@ -79,6 +63,13 @@
             width: 100%;
             padding: 0;
             height: auto;
+          }
+
+          img {
+            @media only screen and (max-width: 768px) {
+              width: auto;
+              height: auto;
+            }
           }
 
           .card-container {
@@ -98,6 +89,7 @@
               color: #202229;
               @media only screen and (max-width: 768px) {
                 width: 100%;
+                padding-left: 0.7rem;
               }
 
             }
@@ -111,6 +103,7 @@
               color: #202229CC;
               @media only screen and (max-width: 768px) {
                 width: 100%;
+                padding-left: 0.7rem;
               }
             }
           }
@@ -155,23 +148,23 @@
         margin-left: 10rem;
         @media only screen and (max-width: 768px) {
           width: 100%;
-          //max-height: 100vh;
           margin-left: 0;
-          gap: 10px;
+          grid-gap: 0;
           flex: 0;
+          padding: 0.8rem;
         }
 
         .grid-card2 {
           height: 185px;
-          @media only screen and (max-width: 768px){
-            min-height: 100vh;
+          @media only screen and (max-width: 768px) {
+            height: auto;
           }
         }
 
         .grid-card4 {
           margin-top: -3.9rem;
-          @media only screen and (max-width: 768px){
-            min-height: 100vh;
+          @media only screen and (max-width: 768px) {
+            height: auto;
           }
         }
 
@@ -182,23 +175,23 @@
           box-shadow: 2px 12px 9px -2px rgba(0, 0, 0, 0.20);
           @media only screen and (max-width: 768px) {
             width: 100%;
-            height: 100vh;
+            height: auto;
           }
 
 
           .img-container1 {
             background: #ffdace;
             border-bottom-left-radius: 15px;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
-              min-height: 100vh;
+              height: auto;
             }
           }
 
           .img-container2 {
             background: #c8efc4;
             border-bottom-left-radius: 15px;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
             }
           }
@@ -206,16 +199,16 @@
           .img-container3 {
             background: #d8d2ff;
             border-radius: 15px;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
-              height: 100vh;
+              height: auto;
             }
           }
 
           .img-container4 {
             background: #fddd8b;
             border-radius: 15px;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
             }
 
@@ -224,8 +217,9 @@
           .detail {
             margin-top: 0.5rem;
             padding: 1rem;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
+              padding: 0.5rem;
             }
 
             h2 {
@@ -235,8 +229,9 @@
               letter-spacing: -0.02em;
               text-align: left;
               color: rgba(32, 34, 41, 0.8);
-              @media only screen and (max-width: 768px){
+              @media only screen and (max-width: 768px) {
                 width: 100%;
+
               }
 
             }
@@ -248,8 +243,10 @@
               line-height: 13px;
               letter-spacing: -0.02em;
               text-align: left;
-              @media only screen and (max-width: 768px){
+              @media only screen and (max-width: 768px) {
                 width: 100%;
+                margin-top: 1.2rem;
+                padding: 0.2rem;
               }
 
             }
@@ -268,14 +265,14 @@
           padding: 1rem;
           margin-top: 2rem;
           box-shadow: 2px 12px 9px -2px rgba(0, 0, 0, 0.20);
-          @media only screen and (max-width: 768px){
+          @media only screen and (max-width: 768px) {
             width: 100%;
           }
 
           .imgCon1 {
             display: flex;
             align-items: center;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
             }
           }
@@ -285,13 +282,13 @@
             flex-direction: column;
             align-items: center;
             margin-top: 1rem;
-            @media only screen and (max-width: 768px){
+            @media only screen and (max-width: 768px) {
               width: 100%;
             }
 
             .vector-line {
               margin-bottom: 1rem;
-              @media only screen and (max-width: 768px){
+              @media only screen and (max-width: 768px) {
                 width: 100%;
               }
             }
@@ -382,18 +379,24 @@
           height: 240px;
           border-radius: 21px;
           background: #D8D2FF;
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
 
           .img-container1 {
             display: flex;
             align-items: center;
             margin-left: -20px;
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              margin-left: 0;
+            }
 
             h2 {
               margin-left: -20px;
               margin-top: -26px;
               font-size: 25px;
               color: #202229;
-
               text-align: left;
             }
           }
@@ -403,6 +406,11 @@
             flex-direction: column;
             margin-top: 0.4rem;
             padding: 10px;
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+              padding: 0.2rem;
+              margin-top: 0;
+            }
 
             h2 {
               font-size: 18px;
@@ -412,6 +420,9 @@
               text-align: left;
               margin-top: 0.4rem;
               color: #202229;
+              @media only screen and (max-width: 768px) {
+                width: 100%;
+              }
 
             }
 
@@ -429,6 +440,12 @@
               width: 70px;
               height: 14px;
               margin-top: 1.7rem;
+              @media only screen and (max-width: 768px) {
+                max-width: 100px;
+                height: auto;
+                padding: 0;
+                margin-top: 0.5rem;
+              }
             }
           }
 
@@ -452,12 +469,51 @@
         .grid-card-span {
           grid-column: span 2;
           margin-top: -2.8rem;
+          @media only screen and (max-width: 768px){
+            margin-top: 0;
+          }
+
+          .img-container3{
+            @media only screen and (max-width: 768px){
+              width: 100%;
+               img{
+                 width: 100%;
+               }
+            }
+          }
         }
       }
     }
   }
 
   .contents {
+    height: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background: #fFFF;
+      clip-path: polygon(100% 0, 100% 0, -100% 100%, 0 -100%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #ffff;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 1;
+
+    }
+
     .one {
       margin-bottom: -0.8rem;
     }
@@ -466,60 +522,58 @@
   .contents2 {
     background: #fff7e1;
     margin-top: 1rem;
+    position: relative;
 
-
-    .separator-content2-top {
-      width: 100vw;
-      height: 67px;
-      background: #ffff;
-      bottom: 360px;
+    &::before {
+      content: "";
       position: absolute;
-      transform: rotate(-2.6deg);
-      margin-left: -1rem;
-      @media only screen and (max-width: 768px){
-        display: none;
-      }
-
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #ffff;
+      clip-path: polygon(100% 0, 100% 0, -100% 100%, 0 -100%);
     }
 
-    .separator-content2-bottom {
-      //width: 100vw;
-      //height: 100px;
-      //background: #ffff;
-      //right: 200rem;
-      //left: -1rem;
-      //top: 360px;
-      //position: absolute;
-      //transform: rotate(-2.6deg);
-      //border-bottom-right-radius: 4px;
-      //z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: #ffff;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
+      z-index: 1;
     }
   }
 
   .contents3 {
     background: #f3f3f3;
     margin-top: 0.7rem;
+    position: relative;
 
-
-    .separator-content3-top {
-      width: 100vw;
-      height: 65px;
-      background: #ffff;
-      bottom: 365px;
+    &::before {
+      content: "";
       position: absolute;
-      transform: rotate(-2.6deg);
-      margin-left: -10rem;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: #ffff;
+      clip-path: polygon(100% 0, 100% 0, -100% 100%, 0 -100%);
       z-index: 1;
     }
 
-    .separator-content3-bottom {
-      width: 100vw;
-      height: 80px;
-      background: #ffff;
-      top: 360px;
+    &::after {
+      content: "";
       position: absolute;
-      transform: rotate(-2.6deg);
-      margin-left: -10rem;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #ffff;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 0 100%);
       z-index: 1;
     }
   }

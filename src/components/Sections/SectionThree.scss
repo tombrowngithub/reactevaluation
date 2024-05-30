@@ -1,19 +1,52 @@
 .section-three {
+  width: 100%;
   background: #202229;
   display: flex;
   padding-bottom: 14rem;
-  @media only screen and (max-width: 768px) {
+  position: relative;
+  @media only screen and (max-width: 576px) {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
+    margin-top: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: #EDEFFF;
+    clip-path: polygon(100% 0, 100% 0, -100% 100%, 0 -100%);
+    @media only screen and (max-width: 576px) {
+      height: 70px;
+    }
+  }
+
+  .quoteIcon {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    transform: rotate(-3deg);
+    @media only screen and (max-width: 576px) {
+      max-width: 100px;
+      display: flex;
+      flex-direction: column;
+      transform: rotate(0deg);
+      overflow-x: hidden;
+      top: 1rem;
+    }
+  }
+
 
   .left {
     flex: 2;
     margin-top: 7rem;
     padding: 4em 0 0 4em;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 576px) {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -28,9 +61,11 @@
       color: #fff;
       font-size: 2.9em;
       font-weight: 700;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 576px) {
         width: 100%;
+        height: auto;
         font-size: 2.4em;
+        padding: 0.8rem;
       }
     }
 
@@ -41,9 +76,10 @@
       font-size: 1.3em;
       font-weight: 500;
       opacity: 70%;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 576px) {
         width: 100%;
-        padding: 0 10px 10px 10px;
+        padding: 0.8rem;
+        text-align: center;
       }
     }
 
@@ -51,7 +87,7 @@
       display: flex;
       align-items: center;
       margin-top: 3rem;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 576px) {
         width: 100%;
         justify-content: center;
       }
@@ -64,7 +100,7 @@
         border-radius: 20.19px;
         border: none;
         outline: none;
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 576px) {
           width: 100%;
           border-radius: 14px;
           margin: 0 10px 0 10px;
@@ -76,7 +112,7 @@
   .right {
     margin-top: 14rem;
     flex: 2;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 576px) {
       width: 100%;
       flex: 0;
       margin-top: 5rem;
@@ -85,7 +121,7 @@
     .right-content {
       display: flex;
       align-items: center;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 576px) {
         width: 100%;
       }
 
@@ -98,15 +134,16 @@
         height: 99px;
         border-radius: 40%;
         margin-right: 16px;
-        @media only screen and (max-width: 768px) {
-          width: 100px;
-          height: 100px;
-          border-radius: 100%;
+        @media only screen and (max-width: 576px) {
+          width: 100%;
+          min-height: auto;
+          border-radius: 50%;
+
         }
       }
 
       .subHeader-right {
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 576px) {
           width: 100%;
         }
 
@@ -114,7 +151,7 @@
           color: #fff;
           font-size: 2.45em;
           font-weight: 400;
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 576px) {
             width: 100%;
           }
         }
@@ -127,7 +164,7 @@
           margin-top: 4px;
           line-height: 19px;
           text-align: left;
-          @media only screen and (max-width: 768px) {
+          @media only screen and (max-width: 576px) {
             width: 100%;
           }
         }
@@ -143,10 +180,10 @@
       text-align: left;
       font-size: 1.3em;
       font-weight: 500;
-      @media only screen and (max-width: 768px) {
+      @media only screen and (max-width: 576px) {
         width: 100%;
         margin-top: 0.5rem;
-        padding: 8px;
+        padding: 0.6rem;
       }
     }
   }

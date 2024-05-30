@@ -5,10 +5,14 @@ import Groove from "../../assets/logos/groove.png"
 import VectorArrow1 from "../../assets/icons/VectorBtn1.png"
 import VectorArrow2 from "../../assets/icons/VectorBtn2.png"
 import GrooveSmall from "../../assets/logos/grooveSmall.png"
+import QuoteLogo from "../../assets/logos/quoteIcon.png"
 
 const SectionThree = () => {
     return (
         <section className="section-three">
+            <div className="quoteIcon">
+                <img src={QuoteLogo} alt=""/>
+            </div>
             <div className="left">
                 <h1>How it worked for Jason <img src={zwiltGif} alt=""/> at <img src={Groove} alt=""/></h1>
 

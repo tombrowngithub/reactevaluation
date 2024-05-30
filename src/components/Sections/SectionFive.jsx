@@ -20,8 +20,6 @@ import woman_circle from "../../assets/images/woman-circle.png"
 import woman_circle2 from "../../assets/images/woman_circle.png"
 import Leelar from "../../assets/images/Leelar.png"
 import Leelar2 from "../../assets/images/Leelar2.png"
-
-
 import Man_Circle from "../../assets/images/man-circle.png"
 import Gridspan from "../../assets/images/gridspan.png"
 import Man_Circle2 from "../../assets/images/man_cirecle2.png"
@@ -33,9 +31,7 @@ const SectionFive = () => {
         <section className="sectionFive">
             <h1 className="Heading">Start your journey today.</h1>
 
-
             <div className="contents">
-                <div className="separator-content1-top"></div>
                 <div className="one">
                     <div className="left">
                         <div className="card-one">
@@ -84,7 +80,6 @@ const SectionFive = () => {
                         </div>
                     </div>
                 </div>
-                <div className="separator-content1-bottom"></div>
             </div>
 
 
@@ -254,10 +249,8 @@ const SectionFive = () => {
                                 <img src={Gridspan} alt=""/>
                             </div>
                         </div>
-
                     </div>
                 </div>
-                <div className="separator-content3-bottom"></div>
             </div>
         </section>
     )

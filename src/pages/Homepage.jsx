@@ -16,21 +16,15 @@ const Homepage = () => {
     return (
         <main className="homepage">
             <Navbar/>
-            <section className="homepage-content">
-                <SectionOne/>
-                <div className="separator-top"></div>
-                <SectionTwo/>
-                <div className="separator-bottom">
-                    <img className="quote-icon" src={Quote} alt=""/>
-                </div>
-                <SectionThree/>
-                <div className="separator-end"></div>
-                <SectionFour/>
-                <SectionFive/>
-                <SectionSix/>
-                <SectionSeven/>
-                <FooterSection/>
-            </section>
+            <SectionOne/>
+            <SectionTwo/>
+            <SectionThree/>
+            <SectionFour/>
+            <SectionFive/>
+            <SectionSix/>
+            <SectionSeven/>
+            <FooterSection/>
+
         </main>
     )
 }

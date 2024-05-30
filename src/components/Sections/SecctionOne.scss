@@ -1,13 +1,16 @@
 .section-one {
+  max-width: 100%;
   width: 100%;
   margin-top: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 2rem;
+    justify-content: center;
   }
 
 
@@ -20,7 +23,6 @@
     @media only screen and (max-width: 768px) {
       width: 100%;
       font-size: 1.5em;
-      flex-wrap: wrap;
     }
   }
 
@@ -36,6 +38,10 @@
     text-align: center;
     @media only screen and (max-width: 768px) {
       width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+      font-size: 1.3em;
     }
   }
 
@@ -50,8 +56,10 @@
     border-radius: 15px;
     border: 1.5px solid #F0F0F0;
     @media only screen and (max-width: 768px) {
-      width: 378px;
+      max-width: 350px;
+      height: auto;
       margin-top: 3rem;
+      padding: 0;
     }
 
     input {
@@ -223,7 +231,8 @@
     }
 
     img {
-      width: 100vw;
+      max-width: 100vw;
+      width: 100%;
       object-fit: cover;
       display: block;
       margin: 0;
